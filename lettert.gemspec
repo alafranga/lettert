@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.author      = 'Recai Oktaş'
   s.email       = 'roktas@gmail.com'
   s.license     = 'GPL-3.0-or-later'
-  s.version     = lettert::VERSION.dup
+  s.version     = Lettert::VERSION.dup
   s.summary     = 'Assertions for command line programs'
   s.description = 'Assertions for command line programs'
 
