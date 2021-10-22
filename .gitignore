@@ -1,0 +1,6 @@
+*.old
+.envrc
+.local/tmp
+/.bundle/
+/pkg/
+/vendor/
