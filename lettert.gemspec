@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = 'Assertions for command line programs'
 
   s.homepage      = 'https://alaturka.github.io/lettert'
-  s.files         = Dir['[A-Z]*', 'lettert.gemspec', 'lib/**/*']
+  s.files         = Dir['[A-Z][A-Z]*', 'lettert.gemspec', 'lib/**/*']
   s.executables   = %w[t]
   s.require_paths = %w[lib]
 
