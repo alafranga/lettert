@@ -42,7 +42,7 @@ module Lettert
     private_constant :Result
 
     def self.call(*args)
-      out, err, status = Open3.capture3(*args, stdin_data: !$stdin.closed? && $stdin.tty? ? '' : $stdin.read)
+      out, err, status = Open3.capture3(*args, stdin_data: $stdin.closed? || $stdin.tty? ? '' : $stdin.read)
 
       Result.new out: out, err: err, argv: args, status: status.exitstatus
     end
