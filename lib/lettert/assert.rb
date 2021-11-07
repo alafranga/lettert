@@ -130,6 +130,8 @@ module Lettert
         success = flags[:success].nil? ? assertion.success : flags[:success]
         on      = assertion.on
 
+        $stdin.close if flags[:mute]
+
         assertion.klass.new(argv).assert(on: on, success: success, topic: topic)
       end
 

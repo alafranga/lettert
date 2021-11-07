@@ -9,7 +9,8 @@ module Lettert
 
           -success               Expect successful exit code
           -failure               Expect failure exit code
-          -quiet                 Mute verbose messages
+          -mute                  Mute STDIN
+          -quiet                 Run quietly
           -help                  Show this help
           -version               Show version
 
@@ -19,6 +20,7 @@ module Lettert
     FLAGS = {
       failure: nil,
       help:    nil,
+      mute:    false,
       quiet:   false,
       success: nil,
       version: nil
